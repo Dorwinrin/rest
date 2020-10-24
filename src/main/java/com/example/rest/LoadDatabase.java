@@ -25,7 +25,7 @@ class LoadDatabase {
       });
 
       orderRepository.save(new Order("Patatas", Status.COMPLETED));
-      orderRepository.save(new Order("Más patatas", Status.IN_PROGRESS));
+      orderRepository.save(new Order("Mas patatas", Status.IN_PROGRESS));
 
       orderRepository.findAll().forEach(order -> {
         log.info("Preloaded" + order);
